@@ -1,10 +1,9 @@
 #include "maincontentwidget.h"
-
-#include <QOpenGLWidget>
+#include "mainopenglwidget.h"
 
 MainContentWidget::MainContentWidget(QWidget *parent)
     : QWidget{parent}
 {
-    QOpenGLWidget *openglWidget = new QOpenGLWidget(this);
+    MainOpenGLWidget *openglWidget = new MainOpenGLWidget(this);
     openglWidget->setGeometry(0, 0, 600, 600);
 }
