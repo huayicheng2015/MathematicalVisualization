@@ -1,5 +1,13 @@
 # 数学可视化
 
+## 项目定位
+
+- 学习c++、Qt 6.x、OpenGL
+
+## 待完成功能
+
+1 在应用程序窗口的任意位置，能够显示一个像素点
+
 ## 我的系统配置
 
 - MacBook Pro Intel macOS 12
@@ -27,3 +35,7 @@ constexpr int opengl_minor_version = 1;
 ## 已有功能
 
 截至2025年09月17日，暂无任何功能。
+
+## 交流与沟通
+
+目前，交流与沟通的渠道是[Github Issues](https://github.com/huayicheng2015/MathematicalVisualization/issues)。
