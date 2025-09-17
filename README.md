@@ -23,3 +23,7 @@ constexpr int opengl_minor_version = 1;
 ```
 
 其中`opengl_major_version`和`opengl_minor_version`的值可以自定义。另外，**请勿**将该文件加入Git。
+
+## 已有功能
+
+截至2025年09月17日，暂无任何功能。
