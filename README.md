@@ -7,6 +7,7 @@
 ## 待完成功能
 
 1 在应用程序窗口的任意位置，能够显示一个像素点
+2 应用程序启动后显示为最大化，且允许用户最小化、全屏化，但不允许用户调节窗口大小（该功能留给愿意为本项目贡献代码的人）
 
 ## 我的系统配置
 
@@ -36,9 +37,10 @@ constexpr int opengl_minor_version = 1;
 
 截至2025年09月17日，暂无任何功能。
 
-## 交流与沟通
+## 交流与沟通、贡献
 
 目前，交流与沟通的渠道是[Github Issues](https://github.com/huayicheng2015/MathematicalVisualization/issues)。
+贡献代码的方式为PR，具体为以[Github Issues](https://github.com/huayicheng2015/MathematicalVisualization/issues)的形式发出通知，表明要PR的意愿，我回复之后，贡献者再提PR。
 
 ## 运行效果
 
