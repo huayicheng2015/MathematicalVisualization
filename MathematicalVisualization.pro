@@ -14,6 +14,7 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    globalconfig.h \
     mainwindow.h
 
 # Default rules for deployment.
