@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
     QSurfaceFormat::setDefaultFormat(defaultSurFmt);
     QApplication a(argc, argv);
     MainWindow w;
+    w.setMinimumSize(800, 600);
     w.show();
     return a.exec();
 }

@@ -11,10 +11,12 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
+    maincontentwidget.cpp \
     mainwindow.cpp
 
 HEADERS += \
     globalconfig.h \
+    maincontentwidget.h \
     mainwindow.h
 
 # Default rules for deployment.
