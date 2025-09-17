@@ -40,6 +40,7 @@ constexpr int opengl_minor_version = 1;
 ## 交流与沟通、贡献
 
 目前，交流与沟通的渠道是[Github Issues](https://github.com/huayicheng2015/MathematicalVisualization/issues)。
+
 贡献代码的方式为PR，具体为以[Github Issues](https://github.com/huayicheng2015/MathematicalVisualization/issues)的形式发出通知，表明要PR的意愿，我回复之后，贡献者再提PR。
 
 ## 运行效果
