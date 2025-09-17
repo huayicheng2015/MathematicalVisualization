@@ -39,3 +39,7 @@ constexpr int opengl_minor_version = 1;
 ## 交流与沟通
 
 目前，交流与沟通的渠道是[Github Issues](https://github.com/huayicheng2015/MathematicalVisualization/issues)。
+
+## 运行效果
+
+![运行效果图](https://github.com/huayicheng2015/MathematicalVisualization/blob/master/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%88%AA%E5%B1%8F2025-09-17%2019.10.32.png)
