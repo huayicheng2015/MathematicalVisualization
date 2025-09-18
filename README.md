@@ -24,14 +24,14 @@
 #ifndef GLOBALCONFIG_H
 #define GLOBALCONFIG_H
 
-constexpr int opengl_major_version = 4;
-constexpr int opengl_minor_version = 1;
+#define MV_OPENGL_MAJOR_VERSION 4
+#define MV_OPENGL_MINOR_VERSION 1
 
 #endif // GLOBALCONFIG_H
 
 ```
 
-其中`opengl_major_version`和`opengl_minor_version`的值可以自定义，允许自定义的范围限定为3.2、3.3、4.0、4.1。另外，**请勿**将该文件加入Git。
+其中`MV_OPENGL_MAJOR_VERSION`和`MV_OPENGL_MINOR_VERSION`的值可以自定义，允许自定义的范围限定为3.2、3.3、4.0、4.1。另外，**请勿**将该文件加入Git。
 
 ## 已有功能
 

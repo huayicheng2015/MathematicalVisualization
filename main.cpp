@@ -7,8 +7,8 @@
 int main(int argc, char *argv[])
 {
     QSurfaceFormat defaultSurFmt{ QSurfaceFormat::defaultFormat() };
-    defaultSurFmt.setMajorVersion(opengl_major_version);
-    defaultSurFmt.setMinorVersion(opengl_minor_version);
+    defaultSurFmt.setMajorVersion(MV_OPENGL_MAJOR_VERSION);
+    defaultSurFmt.setMinorVersion(MV_OPENGL_MINOR_VERSION);
     defaultSurFmt.setProfile(QSurfaceFormat::CoreProfile);
     QSurfaceFormat::setDefaultFormat(defaultSurFmt);
     QApplication a(argc, argv);
