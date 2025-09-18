@@ -15,7 +15,16 @@ MainOpenGLWidget::~MainOpenGLWidget()
 void MainOpenGLWidget::initializeGL()
 {
     QOpenGLContext *cxt = context();
+
+#if MV_OPENGL_MAJOR_VERSION == 4 && MV_OPENGL_MINOR_VERSION == 0
+    glf = QOpenGLVersionFunctionsFactory::get<QOpenGLFunctions_4_0_Core>(cxt);
+#elif MV_OPENGL_MAJOR_VERSION == 3 && MV_OPENGL_MINOR_VERSION == 3
+    glf = QOpenGLVersionFunctionsFactory::get<QOpenGLFunctions_3_3_Core>(cxt);
+#elif MV_OPENGL_MAJOR_VERSION == 3 && MV_OPENGL_MINOR_VERSION == 2
+    glf = QOpenGLVersionFunctionsFactory::get<QOpenGLFunctions_3_2_Core>(cxt);
+#else
     glf = QOpenGLVersionFunctionsFactory::get<QOpenGLFunctions_4_1_Core>(cxt);
+#endif
 }
 
 void MainOpenGLWidget::paintGL()
