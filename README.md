@@ -31,7 +31,7 @@ constexpr int opengl_minor_version = 1;
 
 ```
 
-其中`opengl_major_version`和`opengl_minor_version`的值可以自定义。另外，**请勿**将该文件加入Git。
+其中`opengl_major_version`和`opengl_minor_version`的值可以自定义，允许自定义的范围限定为3.2、3.3、4.0、4.1。另外，**请勿**将该文件加入Git。
 
 ## 已有功能
 
