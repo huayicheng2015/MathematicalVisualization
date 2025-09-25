@@ -3,6 +3,8 @@
 
 #include "globalconfig.h"
 
+#include <QByteArray>
+
 #if MV_OPENGL_MAJOR_VERSION == 4 && MV_OPENGL_MINOR_VERSION == 0
     #include <QOpenGLFunctions_4_0_Core>
 #elif MV_OPENGL_MAJOR_VERSION == 3 && MV_OPENGL_MINOR_VERSION == 3
@@ -32,6 +34,7 @@ protected:
     virtual void paintGL() override;
 
 private:
+    QByteArray *glVersionByteArr;
     QString *glVersionStr;
 
 #if MV_OPENGL_MAJOR_VERSION == 4 && MV_OPENGL_MINOR_VERSION == 0

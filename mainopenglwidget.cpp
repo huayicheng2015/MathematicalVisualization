@@ -1,14 +1,14 @@
 #include "mainopenglwidget.h"
 
-#include <QChar>
 #include <QOpenGLContext>
 #include <QOpenGLVersionFunctionsFactory>
 
-MainOpenGLWidget::MainOpenGLWidget(QWidget *parent) : QOpenGLWidget{ parent }, glVersionStr{ new QString }
+MainOpenGLWidget::MainOpenGLWidget(QWidget *parent) : QOpenGLWidget{ parent }, glVersionByteArr{ new QByteArray }, glVersionStr{ new QString }
 {}
 
 MainOpenGLWidget::~MainOpenGLWidget()
 {
+    delete glVersionByteArr;
     delete glVersionStr;
 }
 
@@ -32,10 +32,12 @@ void MainOpenGLWidget::paintGL()
     glf->glClearColor(1.0, 1.0, 0.0, 1.0);
     glf->glClear(GL_COLOR_BUFFER_BIT);
     const GLubyte *version = glf->glGetString(GL_VERSION);
+    glVersionByteArr->clear();
     glVersionStr->clear();
     for (quint16 i = 0; version[i] != 0; ++i)
     {
-        glVersionStr->append(QChar(version[i]));
+        glVersionByteArr->append(version[i]);
     }
+    glVersionStr->append(*glVersionByteArr);
     qDebug() << *glVersionStr;
 }
